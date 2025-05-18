@@ -14,7 +14,7 @@ body {
 
 /* Header */
 header {
-  background-color: #0042a5;
+  background-color: #3f1d6a;
   color: #fff;
   padding: 1.5rem 1rem 2rem;
   display: flex;
@@ -96,7 +96,7 @@ header nav .btn-daftar:hover {
 }
 
 .hero p {
-  color: #0a8c91;
+  color: #000000;
   font-weight: bold;
 }
 
@@ -252,7 +252,7 @@ footer p {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: #2d2c89;
+  background-color: #3f1d6a;
   color: white;
   position: relative;
   flex-wrap: wrap;

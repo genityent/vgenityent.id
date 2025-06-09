@@ -1,229 +1,410 @@
-/* Reset CSS */
+/* Reset & basic */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fafafa;
   color: #222;
   line-height: 1.6;
+  padding: 20px;
 }
 
-/* Header */
-header {
-  background-color: #3f1d6a;
-  color: #fff;
-  padding: 1.5rem 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  position: relative;
-}
-
-header .logo {
-  position: absolute;
-  left: 2rem;
-}
-
-header .logo img {
-  max-height: 60px;
-  height: auto;
-  width: auto;
-}
-
-header nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-}
-
-header nav a {
-  font-size: 1rem;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-header nav a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-header nav .btn-daftar {
-  background: #ffd700;
-  color: #000;
-  border-radius: 30px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-header nav .btn-daftar:hover {
-  background-color: #ffcc00;
-}
-
-/* Hero Section */
-.hero {
-  background-color: #7ef1f8;
-  text-align: center;
-  padding: 3rem 1rem;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.hero h2 {
-  color: #fff;
-  font-size: 1.8rem;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  color: #ff4d4d;
-  font-weight: 800;
-}
-
-.hero p {
-  color: #000000;
-  font-weight: bold;
-}
-
-/* Tombol */
-.btn-daftar {
-  background: #ffd700;
-  color: #000;
-  padding: 0.5rem 1rem;
-  border-radius: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.btn-daftar:hover {
-  background-color: #ffcc00;
-}
-
-.btn-order {
-  background-color: orange;
-  color: white;
-  padding: 0.7rem 1.5rem;
-  text-decoration: none;
-  border-radius: 10px;
-  display: inline-block;
-  margin-top: 1rem;
-  transition: background-color 0.3s ease;
-}
-
-.btn-order:hover {
-  background-color: #e69500;
-}
-
-/* Section umum */
-.section {
-  padding: 3rem 1rem;
-  max-width: 1000px;
-  margin: auto;
-  width: 100%;
-  text-align: center; /* Ini untuk menengahkan teks dalam section */
-}
-
-.section h2 {
-  margin-bottom: 1.5rem;
-  font-weight: 800;
-}
-
-/* Section khusus */
-.about, .news, .staff, .merchandise, .partner, .faq, .contacts {
-  background-color: #e3faff;
-  border-radius: 20px;
-  padding: 2rem;
-  margin: 2rem 0;
-  text-align: center; /* Teks dalam box akan terletak di tengah */
-  width: 100%;
-  box-sizing: border-box;
+main {
+  max-width: 960px;
   margin: 0 auto;
 }
 
-.news-boxes, .talents, .partners {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.news-box, .talent-card, .partner-logo {
-  background: #fff;
-  padding: 1rem;
-  border-radius: 10px;
-  width: 250px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+header {
   text-align: center;
-  transition: transform 0.3s ease;
+  padding: 40px 20px;
+  background-color: #4B0082;
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 40px;
 }
 
-.news-box:hover, .talent-card:hover, .partner-logo:hover {
-  transform: scale(1.05);
+header img {
+  max-width: 120px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.3rem;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.section {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgb(75 0 130 / 0.15);
+  padding: 30px 25px;
+  margin-bottom: 30px;
+}
+
+.section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #4B0082;
+  border-bottom: 2px solid #4B0082;
+  padding-bottom: 5px;
+}
+
+.section p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.team {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .talent-card {
-  border-top: 10px solid #ff4d4d;
-}
-
-.talent-card img, .partner-logo img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.talent-card p {
-  padding: 10px;
-  background-color: #f8f8f8;
-  margin: 0;
-}
-
-/* Staff */
-.staff ul {
-  list-style: none;
-  padding-left: 1rem;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  padding: 15px;
   text-align: center;
+  flex: 1 1 180px;
+  box-shadow: 0 4px 8px rgba(75, 0, 130, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.staff li::before {
-  content: "\2022 ";
-  color: #0042a5;
+.talent-card img {
+  width: 100px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.talent-card:hover {
+  transform: translateY(-5px);
+}
+
+.yellow-btn {
+  background-color: #FFD700;
+  color: #4B0082;
   font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
 }
 
-/* FAQ */
-.faq p {
-  margin-bottom: 1rem;
+.yellow-btn:hover {
+  background-color: #FFC107;
+}
+
+.team-staff {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.team-staff li {
+  background-color: #f0f0f0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   text-align: center;
 }
 
-/* Kontak */
-.contacts {
+.news-box > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.news-box.red,
+.news-box.green {
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.news-box.red {
+  background-color: #ffe6e6;
+  border-left: 5px solid #ff4d4d;
+}
+
+.news-box.green {
+  background-color: #e6ffe6;
+  border-left: 5px solid #33cc33;
+}
+
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.partner-card img {
+  max-width: 100px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.faq-box {
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  padding: 15px 20px;
+  border-radius: 12px;
+  border-left: 5px solid #4B0082;
+}
+
+.faq-box strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #4B0082;
+}
+
+.social-media {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.social-media a {
+  color: #4B0082;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #800080;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 40px;
+}
+/* Reset & basic */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fafafa;
+  color: #222;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #4B0082;
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+header img {
+  max-width: 120px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.3rem;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.section {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgb(75 0 130 / 0.15);
+  padding: 30px 25px;
+  margin-bottom: 30px;
+}
+
+.section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #4B0082;
+  border-bottom: 2px solid #4B0082;
+  padding-bottom: 5px;
+}
+
+.section p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.team {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 16px; /* Lebih rapat */
 }
 
-.contacts div {
-  flex: 1 1 45%;
-  margin: 0.5rem 0;
+
+.talent-card {
+  width: 120px; /* Ukuran diperkecil */
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.talent-card:hover {
+  transform: translateY(-5px);
+}
+
+.talent-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+.talent-card p {
+  margin: 8px;
+  font-size: 12px;
+  color: #333;
+}
+
+
+.yellow-btn {
+  background-color: #FFD700;
+  color: #4B0082;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.yellow-btn:hover {
+  background-color: #FFC107;
+}
+
+.team-staff {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.team-staff li {
+  background-color: #f0f0f0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.news-box > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.news-box.red,
+.news-box.green {
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.news-box.red {
+  background-color: #ffe6e6;
+  border-left: 5px solid #ff4d4d;
+}
+
+.news-box.green {
+  background-color: #e6ffe6;
+  border-left: 5px solid #33cc33;
+}
+
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.partner-card img {
+  max-width: 100px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.faq-box {
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  padding: 15px 20px;
+  border-radius: 12px;
+  border-left: 5px solid #4B0082;
+}
+
+.faq-box strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #4B0082;
+}
+
+.social-media {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.social-media a {
+  color: #4B0082;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #800080;
 }
 
 .social-icons img {
@@ -233,192 +414,10 @@ header nav .btn-daftar:hover {
   margin: 0.5rem;
 }
 
-/* Footer */
 footer {
-  background-color: #0042a5;
-  color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 15px 10px;
   font-size: 0.9rem;
-}
-
-footer p {
-  margin: 0;
-}
-
-/* Pendaftaran */
-.pendaftaran-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: #3f1d6a;
-  color: white;
-  position: relative;
-  flex-wrap: wrap;
-}
-
-.logo img, .logo-img {
-  max-height: 60px;
-  height: auto;
-  width: auto;
-}
-
-.header-title {
-  flex: 1;
-  text-align: center;
-  font-size: 1.8rem;
-  margin: 0;
-}
-
-.header-right {
-  text-decoration: none;
-  background-color: #524ae0;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background 0.3s;
-  white-space: nowrap;
-}
-
-.header-right:hover {
-  background-color: #3f39c8;
-}
-
-/* Profile Talent */
-section.profile {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.talent-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-  justify-items: center;
-  margin-top: 30px;
-}
-
-/* Container Talent */
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.left {
-  flex: 1;
-  padding: 10px;
-}
-
-.left img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.right {
-  flex: 2;
-  padding: 10px;
-}
-
-.right h2, .bio h3 {
-  margin-top: 20px;
-}
-
-.bio p {
-  margin-bottom: 5px;
-}
-
-.media iframe {
-  width: 100%;
-  border: none;
-}
-
-.sosmed a {
-  margin: 5px;
-}
-
-.sosmed img {
-  width: 50px;
-  height: 50px;
-  border-radius: 5px;
-}
-
-.donate img {
-  width: 50px;
-  height: auto;
-  margin: 5px;
-}
-
-/* Responsif */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .section {
-    padding: 2rem 1rem;
-  }
-
-  .news-boxes, .talents, .partners {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contacts div {
-    flex: 1 1 100%;
-    margin-bottom: 1rem;
-  }
-
-  .btn-daftar {
-    padding: 0.5rem 1rem;
-  }
-
-  .btn-order {
-    width: 100%;
-    text-align: center;
-  }
-
-  .pendaftaran-header {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
-
-  .header-title {
-    order: 2;
-  }
-
-  .header-left,
-  .header-right {
-    order: 1;
-  }
-
-  .header-right {
-    align-self: flex-end;
-  }
-
-  header .logo {
-    align-self: center;
-    margin: 0 0 1rem;
-  }
-
-  header nav {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  header nav a {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
+  color: #666;
+  margin-top: 40px;
 }

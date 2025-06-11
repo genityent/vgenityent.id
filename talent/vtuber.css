@@ -172,8 +172,8 @@ header.ourtalent-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #4b0082;
-  color: white;
+  background-color: #d1e100;
+  color: rgb(0, 0, 0);
   padding: 10px 20px;
   flex-wrap: wrap;
 }
@@ -273,5 +273,5 @@ footer {
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
-  color: #777;
+  color: #000000;
 }

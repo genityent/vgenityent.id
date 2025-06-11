@@ -10,8 +10,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #5a2a82;
-  color: white;
+  background-color: #d1e100;
+  color: rgb(0, 0, 0);
   padding: 1rem 2rem;
   flex-wrap: wrap;
 }

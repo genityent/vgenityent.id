@@ -195,13 +195,13 @@ body.dark {
   width: 260px;
   height: 320px;
   border-radius: 20px;
-  padding: 25px 20px 20px; /* ubah padding bawah supaya pas */
+  padding: 25px 20px 20px;
   text-align: center;
   transition: transform 0.8s, opacity 0.8s;
   backdrop-filter: blur(6px);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* isi tetap di atas */
+  justify-content: flex-start;
   align-items: center;
   border: 3px solid transparent;
   background-size: 300% 300%;
@@ -209,7 +209,7 @@ body.dark {
 }
 
 .carousel .card .btn-visit {
-  margin-top: auto;  /* tombol selalu turun ke bawah */
+  margin-top: auto;
   padding: 10px 20px;
   border-radius: 25px;
   font-weight: 600;
@@ -219,7 +219,6 @@ body.dark {
   color: #fff;
   transition: all 0.3s ease;
 }
-
 
 .carousel .card .btn-visit:hover {
   background: #155a8e;
@@ -411,7 +410,7 @@ body.dark .about-card {
 .tools-track {
   display: flex;
   gap: 30px;
-  width: max-content; /* trik biar width ngikutin isi */
+  width: max-content;
   animation: scrollTools 20s linear infinite;
 }
 
@@ -471,4 +470,131 @@ body.dark .tool-card {
   height: auto;
   object-fit: cover;
   margin: 0.5rem;
+}
+
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* HP Kecil (max 600px) */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .brand-text {
+    font-size: 18px;
+  }
+
+  .hero {
+    padding-top: 100px;
+  }
+
+  .hero-card {
+    padding: 30px 20px;
+    max-width: 95%;
+  }
+
+  .hero-card h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-card p {
+    font-size: 0.9rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .carousel {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .carousel .card {
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  .about-card {
+    padding: 20px;
+    font-size: 0.95rem;
+  }
+
+  .team-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .staff-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+}
+
+/* Tablet (601px – 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .navbar {
+    padding: 12px 30px;
+  }
+
+  .brand-text {
+    font-size: 20px;
+  }
+
+  .hero-card {
+    max-width: 600px;
+    padding: 40px 30px;
+  }
+
+  .hero-card h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-card p {
+    font-size: 1rem;
+  }
+
+  .carousel .card {
+    width: 220px;
+    height: auto;
+  }
+
+  .team-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop (900px ke atas) */
+@media (min-width: 901px) {
+  .hero-card h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-card p {
+    font-size: 1.1rem;
+  }
+
+  .team-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
